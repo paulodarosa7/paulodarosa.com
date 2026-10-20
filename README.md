@@ -12,7 +12,7 @@ O site usa **HTML, CSS e JavaScript puros**. Os arquivos finais ficam em `dist/`
 - Experiência, formação e iniciativas pessoais.
 - Navegação adaptada a celulares e seletor de tema.
 - Diagrama conceitual com seleção de camadas para explorar as áreas de conhecimento.
-- Links para os perfis e repositórios públicos informados.
+- Links para GitHub, LinkedIn (`/in/hxpaulo/`) e Instagram (`@hxpaulo`) na apresentação e na seção de contato.
 
 O conteúdo principal está no HTML. O JavaScript acrescenta as interações. O diagrama é uma representação conceitual do portfólio, sem representar uma rede corporativa real.
 
