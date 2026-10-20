@@ -124,12 +124,12 @@ function announce(message) {
   toastTimer = setTimeout(() => { toast.hidden = true; }, 4500);
 }
 document.querySelector('#copy-profile').addEventListener('click', async () => {
-  const url = 'https://github.com/paulodarosa7';
+  const url = 'https://www.linkedin.com/in/hxpaulo/';
   try {
     await navigator.clipboard.writeText(url);
-    announce('Link do GitHub copiado.');
+    announce('Link do LinkedIn copiado.');
   } catch (_) {
-    announce('Não foi possível copiar automaticamente. O endereço é github.com/paulodarosa7.');
+    announce('Não foi possível copiar automaticamente. O endereço é linkedin.com/in/hxpaulo/');
   }
 });
 
