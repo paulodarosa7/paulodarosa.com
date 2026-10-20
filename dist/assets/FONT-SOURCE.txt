@@ -1,0 +1,12 @@
+Manrope variable font
+Family for CSS: Portfolio Sans (local alias)
+Weight axis: 200–800
+Style: normal
+Full glyph set retained, including Portuguese accents.
+
+Official source: https://github.com/google/fonts/tree/main/ofl/manrope
+Downloaded font: https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/Manrope%5Bwght%5D.ttf
+License: OFL.txt (SIL Open Font License 1.1)
+FONTLOG.txt retained as requested upstream.
+WOFF2 conversion: fontTools and Node.js Brotli, no outline changes.
+SVG preview text converted to paths for portable rendering.

@@ -1,0 +1,18 @@
+# Estado local de desenvolvimento; o manifesto de hospedagem é versionado.
+.openai/*
+!.openai/hosting.json
+
+# Metadados locais do Git e arquivos locais de autenticação.
+.git/
+.git-credentials
+.gitconfig
+
+# Arquivos temporários e caches locais.
+*.tmp
+*.temp
+*.log
+__pycache__/
+.DS_Store
+Thumbs.db
+
+# dist/, .github/ e este .gitignore são parte do projeto versionado.
