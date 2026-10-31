@@ -150,22 +150,22 @@
           </article>
 
 
-          <article class="project-card cp-project" data-project data-categories="infra" data-search="balanceamento control planes kubernetes control plane api alta disponibilidade high availability ha failover cluster redundancia resiliencia">
+          <article class="project-card cp-project" data-project data-categories="infra" data-search="balanceamento control planes kubernetes control plane api alta disponibilidade high availability ha failover cluster redundancia resiliencia haproxy argo rollouts jenkins git ci cd deployment rollout health checks observabilidade automacao">
             <div class="card-content">
-              <div class="project-meta"><span class="project-type">INFRAESTRUTURA / KUBERNETES</span><span class="status-subtle">Em desenvolvimento</span></div>
-              <h3>Balanceamento dos Control Planes</h3>
-              <p>Planejamento de um acesso redundante à API do Kubernetes com múltiplos control planes, visando alta disponibilidade e failover.</p>
-              <ul class="tags"><li>Kubernetes</li><li>Control Plane</li><li>Alta disponibilidade</li></ul>
+              <div class="project-meta"><span class="project-type">PLATAFORMA / KUBERNETES</span><span class="status-subtle">Projeto em desenvolvimento</span></div>
+              <h3>Uma API. Três control planes. Zero ponto único.</h3>
+              <p>Desenho de uma entrada resiliente para a API do Kubernetes: o HAProxy distribui conexões entre nós de control plane, enquanto automação e rollout seguro ajudam a evoluir a plataforma com confiança.</p>
+              <ul class="tags"><li>Kubernetes</li><li>HAProxy</li><li>Argo Rollouts</li><li>Jenkins</li><li>Git</li></ul>
               <div class="card-bottom"><button class="detail-link js-only" type="button" data-dialog-target="control-planes" aria-label="Ver detalhes do Balanceamento dos Control Planes">Ver detalhes <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button><span class="project-footnote">Em desenvolvimento</span></div>
             </div>
             <div class="card-art cp-art" aria-hidden="true">
-              <span class="art-label">ARQUITETURA CONCEITUAL</span>
+              <span class="art-label">ACESSO RESILIENTE À API</span>
               <div class="cp-diagram">
-                <div class="cp-load"><span class="cp-load-icon">↔</span><span>BALANCEADOR</span><small>API SERVER</small></div>
+                <div class="cp-load"><span class="cp-load-icon">↔</span><span>HAPROXY</span><small>KUBERNETES API</small></div>
                 <div class="cp-split"></div>
                 <div class="cp-nodes"><span>CP <b>01</b><i></i></span><span>CP <b>02</b><i></i></span><span>CP <b>03</b><i></i></span></div>
               </div>
-              <span class="art-disclaimer">Representação conceitual · Em desenvolvimento</span>
+              <span class="art-disclaimer">Fluxo conceitual · Projeto em desenvolvimento</span>
             </div>
           </article>
 </div>
@@ -216,6 +216,30 @@
   <template id="project-buddy"><p class="eyebrow">IOT & SISTEMAS EMBARCADOS / PROTÓTIPO</p><h2 id="dialog-title">Desk Buddy — assistente IoT</h2><p class="dialog-intro">Um projeto de Internet das Coisas para aproximar um assistente físico de mesa das rotinas de automação, produtividade e monitoramento.</p><span class="dialog-status">Protótipo em desenvolvimento</span><h3>A proposta</h3><p>Explorar uma arquitetura com ESP32, comunicação ESP-NOW e periféricos para criar um assistente físico com funções úteis.</p><h3>Trabalho atual</h3><ul><li>Troca de comandos e respostas entre uma placa mestre e placas escravas.</li><li>Comandos pela interface serial para comunicação, LEDs e leitura de entradas.</li><li>Experimentos com sensores, botões e sinalização sonora.</li></ul><h3>Próximos passos</h3><p>Integrar o assistente ao computador para abrir aplicativos e executar comandos. Interação por voz, modos de produtividade e acompanhamento de serviços fazem parte da evolução planejada; essas funções ainda estão em desenvolvimento.</p><ul class="tags"><li>ESP32</li><li>ESP-NOW</li><li>C++</li><li>Arduino</li><li>Sensores</li></ul></template>
   <template id="project-disponibilidade"><p class="eyebrow">EXPERIÊNCIA PROFISSIONAL / ESTUDO DE CASO</p><h2 id="dialog-title">Disponibilidade que se entende</h2><p class="dialog-intro">Transformar sinais técnicos em uma visão de serviços que também faça sentido para quem não trabalha com infraestrutura.</p><span class="dialog-status">Descrição conceitual da experiência</span><h3>O desafio</h3><p>Um painel pode apresentar muitos indicadores sem responder à pergunta principal: o serviço esteve disponível? A proposta é organizar essa leitura com contexto.</p><h3>Frentes trabalhadas</h3><ul><li>Organização de métricas e indicadores com Grafana e Prometheus.</li><li>Diferenciação entre períodos de manutenção e indisponibilidade.</li><li>Visualização do comportamento dos serviços ao longo do tempo.</li><li>Rótulos e estados que facilitem a compreensão por públicos não técnicos.</li></ul><h3>Aprendizado aplicado</h3><p>Definir o significado de cada indicador e relacionar monitoramento com comunicação. A apresentação aqui resume a abordagem, sem métricas ou detalhes do ambiente corporativo.</p><ul class="tags"><li>Grafana</li><li>Prometheus</li><li>Disponibilidade</li><li>Comunicação</li></ul></template>
 
-  <template id="project-control-planes"><p class="eyebrow">INFRAESTRUTURA / KUBERNETES</p><h2 id="dialog-title">Balanceamento dos Control Planes</h2><p class="dialog-intro">Projeto em desenvolvimento para reduzir pontos únicos de falha no acesso à API do Kubernetes.</p><span class="dialog-status">Em desenvolvimento</span><h3>Objetivo</h3><p>Planejar um ponto de acesso balanceado para múltiplos control planes, com foco em alta disponibilidade e recuperação diante de falhas.</p><p>As etapas de implantação e validação ainda estão em andamento. O diagrama do portfólio é apenas conceitual.</p><ul class="tags"><li>Kubernetes</li><li>Control Plane</li><li>Alta disponibilidade</li></ul></template>
+  <template id="project-control-planes">
+    <p class="eyebrow">PLATAFORMA / KUBERNETES / ALTA DISPONIBILIDADE</p>
+    <h2 id="dialog-title">Balanceamento dos Control Planes</h2>
+    <p class="dialog-intro">Uma camada de acesso resiliente para a API do Kubernetes, conectando múltiplos control planes e combinando balanceamento, entrega contínua e evolução segura da plataforma.</p>
+    <span class="dialog-status">Projeto em desenvolvimento · Arquitetura conceitual</span>
+    <h3>O desafio</h3>
+    <p>Concentrar o acesso ao API Server em um endpoint estável e distribuir as conexões entre os nós de control plane. A proposta busca reduzir pontos únicos de falha e criar uma base para manutenção e recuperação mais previsíveis.</p>
+    <h3>Como as peças se conectam</h3>
+    <ul>
+      <li><strong>HAProxy:</strong> ponto de entrada e balanceamento das conexões destinadas à API do Kubernetes.</li>
+      <li><strong>Kubernetes:</strong> múltiplos nós de control plane atendem por trás do endpoint comum.</li>
+      <li><strong>Git e Jenkins:</strong> versionamento das mudanças e automação das etapas de integração e entrega.</li>
+      <li><strong>Argo Rollouts:</strong> estratégia de rollout progressivo para aplicações no cluster, com atenção à saúde da implantação.</li>
+    </ul>
+    <h3>Conhecimentos trabalhados</h3>
+    <ul>
+      <li>Alta disponibilidade, redundância, failover e eliminação de pontos únicos de falha.</li>
+      <li>Balanceamento de tráfego, endpoints, checagens de saúde e disponibilidade do plano de controle.</li>
+      <li>Orquestração Kubernetes, estratégia de implantação e recuperação operacional.</li>
+      <li>CI/CD, infraestrutura versionada, automação de pipeline e entrega progressiva.</li>
+      <li>Leitura de arquitetura, documentação técnica e validação de cenários de falha.</li>
+    </ul>
+    <p>O projeto segue em desenvolvimento. O desenho apresentado é conceitual; a configuração final, os testes e os resultados serão atualizados conforme a implementação avançar.</p>
+    <ul class="tags"><li>Kubernetes</li><li>HAProxy</li><li>Argo Rollouts</li><li>Jenkins</li><li>Git</li><li>CI/CD</li><li>Alta disponibilidade</li><li>Failover</li></ul>
+  </template>
 </body>
 </html>

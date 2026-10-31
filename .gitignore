@@ -16,3 +16,6 @@ __pycache__/
 Thumbs.db
 
 # dist/, .github/ e este .gitignore são parte do projeto versionado.
+
+# Backups locais do repositório.
+/backups/
