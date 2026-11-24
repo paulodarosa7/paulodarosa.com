@@ -129,6 +129,27 @@
             <div class="featured-art" aria-hidden="true"><div class="art-topline"><span>DA SUBMISSÃO À EXECUÇÃO</span><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg></div><div class="submission"><span class="mono">01</span><code>submit(code)</code><span class="submission-cursor">_</span></div><div class="connector-line"></div><div class="queue"><span>FILA</span><i></i><i></i><i></i><i></i><i></i><span class="queue-arrow">↓</span></div><div class="worker-connector"></div><div class="workers"><div><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layers"/></svg><span>worker</span></div><div><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layers"/></svg><span>worker</span></div><div><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-layers"/></svg><span>worker</span></div></div><div class="cluster-boundary"><span>CLUSTER KUBERNETES</span><span>↗</span></div><p class="art-caption">Fluxo simplificado do projeto</p></div>
           </article>
 
+          <article class="project-card cp-project" data-project data-categories="infra" data-search="plataforma kubernetes smartbr alta disponibilidade 3 control planes 11 workers 14 nós cluster linux haproxy keepalived jenkins gitlab harbor gitops argo rollouts ci cd containers migração aplicações infraestrutura arquitetura liderança">
+            <div class="card-content">
+              <div class="project-meta"><span class="project-type">PLATAFORMA / INFRAESTRUTURA / DEVOPS</span><span class="cp-status">Em operação</span></div>
+              <h3>Kubernetes de alta disponibilidade</h3>
+              <p>Idealizei e iniciei a modernização da plataforma Kubernetes da SmartBR e liderei sua implantação. Migrei serviços corporativos para containers e estabeleci uma arquitetura distribuída, redundante e automatizada, hoje em operação.</p>
+              <ul class="tags"><li>14 nós</li><li>Kubernetes</li><li>HAProxy</li><li>GitOps</li><li>Argo Rollouts</li><li>Jenkins</li></ul>
+              <div class="card-bottom"><button class="detail-link js-only" type="button" data-dialog-target="control-planes" aria-label="Ver detalhes da plataforma Kubernetes em operação">Ver arquitetura e impacto <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button><span class="project-footnote">Arquitetura em produção</span></div>
+            </div>
+            <div class="card-art cp-art" aria-hidden="true">
+              <span class="art-label">PLATAFORMA EM OPERAÇÃO · 14 NÓS</span>
+              <div class="cp-diagram">
+                <div class="cp-load"><span class="cp-load-icon">↔</span><span>ACESSO À API</span><small>HAPROXY + KEEPALIVED</small></div>
+                <div class="cp-split"></div>
+                <div class="cp-nodes"><span>CONTROL<br><b>01</b><i></i></span><span>CONTROL<br><b>02</b><i></i></span><span>CONTROL<br><b>03</b><i></i></span></div>
+                <div class="cp-worker-link"></div>
+                <div class="cp-worker-pool"><strong>11 WORKERS</strong><span>APLICAÇÕES EM CONTAINERS · ESCALA · RECUPERAÇÃO</span></div>
+              </div>
+              <span class="art-disclaimer">Diagrama resumido · detalhes operacionais preservados</span>
+            </div>
+          </article>
+
           <article class="project-card" data-project data-categories="infra" data-search="monitoramento containers docker compose grafana prometheus cadvisor node exporter observabilidade laboratório">
             <div class="card-art monitor-art" aria-hidden="true"><span class="art-label">OBSERVABILIDADE</span><div class="mini-dashboard"><div class="mini-sidebar"><i></i><i></i><i></i></div><div class="mini-panels"><div class="mini-panel chart-panel"><svg viewBox="0 0 280 80"><path d="M0 65h280M0 40h280M0 15h280" stroke="currentColor" opacity=".12" fill="none"/><path d="M0 66 24 64 45 50 68 57 92 26 116 41 139 34 161 44 187 16 211 28 235 18 259 24 280 9" fill="none" stroke="currentColor" stroke-width="2.5"/></svg></div><div class="mini-panel bar-panel"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="mini-panel circle-panel"><span></span></div></div></div><span class="art-disclaimer">Visual ilustrativo</span></div>
             <div class="card-content"><div class="project-meta"><span class="project-type">INFRAESTRUTURA</span><span class="status-subtle">Laboratório documentado</span></div><h3>Workshop sobre Docker</h3><p>Métricas do host e dos containers reunidas em uma stack de monitoramento com dashboards.</p><ul class="tags"><li>Docker</li><li>Grafana</li><li>Prometheus</li></ul><div class="card-bottom"><button class="detail-link js-only" type="button" data-dialog-target="monitoramento" aria-label="Ver detalhes de Monitoramento de containers">Ver detalhes <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button><a class="icon-link" href="https://github.com/paulodarosa7/docker" target="_blank" rel="noopener noreferrer" aria-label="Repositório de Monitoramento de containers (nova aba)"><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-github"/></svg></a></div></div>
@@ -150,24 +171,6 @@
           </article>
 
 
-          <article class="project-card cp-project" data-project data-categories="infra" data-search="balanceamento control planes kubernetes control plane api alta disponibilidade high availability ha failover cluster redundancia resiliencia haproxy argo rollouts jenkins git ci cd deployment rollout health checks observabilidade automacao">
-            <div class="card-content">
-              <div class="project-meta"><span class="project-type">PLATAFORMA / KUBERNETES</span><span class="status-subtle">Projeto em desenvolvimento</span></div>
-              <h3>Uma API. Três control planes. Zero ponto único.</h3>
-              <p>Desenho de uma entrada resiliente para a API do Kubernetes: o HAProxy distribui conexões entre nós de control plane, enquanto automação e rollout seguro ajudam a evoluir a plataforma com confiança.</p>
-              <ul class="tags"><li>Kubernetes</li><li>HAProxy</li><li>Argo Rollouts</li><li>Jenkins</li><li>Git</li></ul>
-              <div class="card-bottom"><button class="detail-link js-only" type="button" data-dialog-target="control-planes" aria-label="Ver detalhes do Balanceamento dos Control Planes">Ver detalhes <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow"/></svg></button><span class="project-footnote">Em desenvolvimento</span></div>
-            </div>
-            <div class="card-art cp-art" aria-hidden="true">
-              <span class="art-label">ACESSO RESILIENTE À API</span>
-              <div class="cp-diagram">
-                <div class="cp-load"><span class="cp-load-icon">↔</span><span>HAPROXY</span><small>KUBERNETES API</small></div>
-                <div class="cp-split"></div>
-                <div class="cp-nodes"><span>CP <b>01</b><i></i></span><span>CP <b>02</b><i></i></span><span>CP <b>03</b><i></i></span></div>
-              </div>
-              <span class="art-disclaimer">Fluxo conceitual · Projeto em desenvolvimento</span>
-            </div>
-          </article>
 </div>
         <div id="empty-projects" class="empty-state" hidden><svg class="icon" aria-hidden="true" focusable="false"><use href="#i-search"/></svg><h3>Nenhum projeto por aqui.</h3><p>Tente outra tecnologia ou explore todas as áreas.</p><button id="reset-projects" class="button button-dark" type="button">Limpar filtros</button></div>
         <div class="all-repositories"><span>Outras ideias, exercícios e experimentos estão no GitHub.</span><a class="text-link" href="https://github.com/paulodarosa7?tab=repositories" target="_blank" rel="noopener noreferrer">Ver todos os repositórios <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-up-right"/></svg><span class="sr-only"> (nova aba)</span></a></div>
@@ -217,29 +220,41 @@
   <template id="project-disponibilidade"><p class="eyebrow">EXPERIÊNCIA PROFISSIONAL / ESTUDO DE CASO</p><h2 id="dialog-title">Disponibilidade que se entende</h2><p class="dialog-intro">Transformar sinais técnicos em uma visão de serviços que também faça sentido para quem não trabalha com infraestrutura.</p><span class="dialog-status">Descrição conceitual da experiência</span><h3>O desafio</h3><p>Um painel pode apresentar muitos indicadores sem responder à pergunta principal: o serviço esteve disponível? A proposta é organizar essa leitura com contexto.</p><h3>Frentes trabalhadas</h3><ul><li>Organização de métricas e indicadores com Grafana e Prometheus.</li><li>Diferenciação entre períodos de manutenção e indisponibilidade.</li><li>Visualização do comportamento dos serviços ao longo do tempo.</li><li>Rótulos e estados que facilitem a compreensão por públicos não técnicos.</li></ul><h3>Aprendizado aplicado</h3><p>Definir o significado de cada indicador e relacionar monitoramento com comunicação. A apresentação aqui resume a abordagem, sem métricas ou detalhes do ambiente corporativo.</p><ul class="tags"><li>Grafana</li><li>Prometheus</li><li>Disponibilidade</li><li>Comunicação</li></ul></template>
 
   <template id="project-control-planes">
-    <p class="eyebrow">PLATAFORMA / KUBERNETES / ALTA DISPONIBILIDADE</p>
-    <h2 id="dialog-title">Balanceamento dos Control Planes</h2>
-    <p class="dialog-intro">Uma camada de acesso resiliente para a API do Kubernetes, conectando múltiplos control planes e combinando balanceamento, entrega contínua e evolução segura da plataforma.</p>
-    <span class="dialog-status">Projeto em desenvolvimento · Arquitetura conceitual</span>
-    <h3>O desafio</h3>
-    <p>Concentrar o acesso ao API Server em um endpoint estável e distribuir as conexões entre os nós de control plane. A proposta busca reduzir pontos únicos de falha e criar uma base para manutenção e recuperação mais previsíveis.</p>
-    <h3>Como as peças se conectam</h3>
+    <p class="eyebrow">PROJETO PROFISSIONAL / PLATAFORMA / DEVOPS</p>
+    <h2 id="dialog-title">Plataforma Kubernetes de alta disponibilidade</h2>
+    <p class="dialog-intro">Idealizei, propus, iniciei e liderei a modernização da plataforma de aplicações da SmartBR. Conduzi o trabalho do desenho arquitetural à implantação e operação de um cluster Kubernetes distribuído, com migração de serviços, automação e entregas controladas.</p>
+    <span class="dialog-status">Núcleo da plataforma concluído e em operação</span>
+    <h3>Uma mudança estrutural, conduzida do início à operação</h3>
+    <p>A necessidade era modernizar a publicação e a operação de aplicações sem interromper os serviços existentes. Estruturei a arquitetura e liderei a implantação em conjunto com a equipe, conectando infraestrutura Linux, rede, balanceamento, armazenamento compartilhado, containers e processos de entrega. Também conduzi a migração de serviços corporativos para a nova plataforma, sem expor seus nomes ou detalhes internos.</p>
+    <h3>Arquitetura da plataforma</h3>
     <ul>
-      <li><strong>HAProxy:</strong> ponto de entrada e balanceamento das conexões destinadas à API do Kubernetes.</li>
-      <li><strong>Kubernetes:</strong> múltiplos nós de control plane atendem por trás do endpoint comum.</li>
-      <li><strong>Git e Jenkins:</strong> versionamento das mudanças e automação das etapas de integração e entrega.</li>
-      <li><strong>Argo Rollouts:</strong> estratégia de rollout progressivo para aplicações no cluster, com atenção à saúde da implantação.</li>
+      <li><strong>14 servidores no cluster:</strong> três nós de Control Plane e onze Workers, distribuindo funções de controle e execução.</li>
+      <li><strong>Acesso resiliente à API:</strong> HAProxy e Keepalived compõem a camada de alta disponibilidade do plano de controle.</li>
+      <li><strong>Workloads em containers:</strong> Kubernetes e containerd gerenciam a execução, o agendamento e a recuperação das aplicações.</li>
+      <li><strong>Integração com a infraestrutura:</strong> conectividade de rede e armazenamento compartilhado foram considerados na migração dos serviços.</li>
     </ul>
-    <h3>Conhecimentos trabalhados</h3>
+    <h3>Entrega automatizada e controlada</h3>
+    <p>Estruturei a integração entre build, publicação de imagens e implantação: Jenkins automatiza a construção; Harbor armazena imagens privadas; GitLab e Git mantêm o código e os manifests versionados; e o processo GitOps V2 reconcilia o estado declarado com o cluster. Argo Rollouts controla as atualizações dos workloads e suas verificações de saúde.</p>
+    <h3>Impacto na operação</h3>
     <ul>
-      <li>Alta disponibilidade, redundância, failover e eliminação de pontos únicos de falha.</li>
-      <li>Balanceamento de tráfego, endpoints, checagens de saúde e disponibilidade do plano de controle.</li>
-      <li>Orquestração Kubernetes, estratégia de implantação e recuperação operacional.</li>
-      <li>CI/CD, infraestrutura versionada, automação de pipeline e entrega progressiva.</li>
-      <li>Leitura de arquitetura, documentação técnica e validação de cenários de falha.</li>
+      <li>Serviços corporativos migrados de processos dependentes de intervenção manual para execução em containers gerenciados pelo Kubernetes.</li>
+      <li>Cluster com redundância no plano de controle e capacidade distribuída entre onze Workers.</li>
+      <li>Fluxo integrado e rastreável de build, publicação de imagem, versionamento e implantação.</li>
+      <li>Atualizações mais controladas, com acompanhamento da saúde dos workloads e possibilidade de recuperação.</li>
+      <li>Base de observabilidade integrada a Prometheus e Grafana, com evolução contínua.</li>
     </ul>
-    <p>O projeto segue em desenvolvimento. O desenho apresentado é conceitual; a configuração final, os testes e os resultados serão atualizados conforme a implementação avançar.</p>
-    <ul class="tags"><li>Kubernetes</li><li>HAProxy</li><li>Argo Rollouts</li><li>Jenkins</li><li>Git</li><li>CI/CD</li><li>Alta disponibilidade</li><li>Failover</li></ul>
+    <h3>Conhecimentos aplicados</h3>
+    <ul>
+      <li>Arquitetura Kubernetes, administração Linux, containerd e operação de clusters distribuídos.</li>
+      <li>Alta disponibilidade, balanceamento, redundância, failover e recuperação operacional.</li>
+      <li>CI/CD com Jenkins, GitLab, Harbor e versionamento de artefatos.</li>
+      <li>GitOps, manifests declarativos, reconciliação de estado e diagnóstico de drift.</li>
+      <li>Argo Rollouts, estratégia de atualização, verificações de saúde e segurança de implantação.</li>
+      <li>Migração de serviços, integração de rede e armazenamento compartilhado.</li>
+      <li>Observabilidade com Prometheus, Grafana, Node Exporter e kube-state-metrics.</li>
+    </ul>
+    <p>O núcleo está em operação; observabilidade, segurança e automação seguem em evolução. Informações internas, endereços, nomes de serviços e configurações corporativas foram omitidos.</p>
+    <ul class="tags"><li>Kubernetes</li><li>Linux</li><li>containerd</li><li>HAProxy</li><li>Keepalived</li><li>Jenkins</li><li>GitLab</li><li>Harbor</li><li>GitOps V2</li><li>Argo Rollouts</li><li>Prometheus</li><li>Grafana</li><li>NFS</li></ul>
   </template>
 </body>
 </html>
